@@ -30,8 +30,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .top{
-    transform: translateY(-80px);
-    transition: all 05s !important;
+    top:65px !important;
 }
 .nav-logo img{
     width: 145px;
@@ -42,6 +41,7 @@ h1,h2,h3,h4,h5,h6{
 
 .block{
     display: block !important;
+    
 }
 
 .navbar-blog ul li{
@@ -55,6 +55,15 @@ h1,h2,h3,h4,h5,h6{
     background-color: #fff;
     box-shadow: 0 0 40px 0 rgba(18,24,32,.1);
 }
+
+
+
+.navbar-blog .ul{
+    top:81px !important;
+
+}
+
+
 
 .navbar-blog .ul li{
     padding: 15px 0;
