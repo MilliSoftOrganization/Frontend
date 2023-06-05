@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    MilliSoft
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="logocoders.svg" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-center gap-4 flex-grow-1 ">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#Blogs">Blogs</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#Contacts">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Teams">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Teams">Portfolio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <button class="dropbtn">Others</button>
+                                <div class="dropdown-content">
+                                  <a href="#">Fags</a>
+                                  <a href="#">Careers</a>
+                                  <a href="#">Events</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="search-box">
+                                    <input type="text" class="search-txt" name="" placeholder="Search">
+                                    <a href="#" class="search-btn text-decoration-none">
+                                        <i class="fa-solid fa-magnifying-glass text-white"></i>
+                                    </a>
+                                  </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="contact-page">
+        <div class="contact-head">
+            <img src="map.png" alt="background">
+            <div class="contact-head-deco"></div>
+            <div class="container head-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" style="color: rgba(18,24,32,.5);">Contact Us</a></li>
+                </ul>
+                <h2>Gəlin sizin Şansinizi Müzakirə edək</h2>
+            </div>
+        </div>
+    </section>
+    <section id="contact-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-xl-8">
+                    <form action="#">
+                        <h4>
+                            <span>01.</span>
+                            Bizə Özünüz Haqqında Deyin
+                        </h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Name">First Name</label>
+                                <input id="Name" type="text" placeholder="Elmin">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="Last_Name">Last Name</label>
+                                <input id="Last_Name" type="text" placeholder="Imanverdiyev">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="email">Email Address</label>
+                                <input id="email" type="text" placeholder="develooper007@gmail.com">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="text" placeholder="+994515888968">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="company">Company</label>
+                                <input id="company" type="text" placeholder="MilliSoft">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="role">Role</label>
+                                <input id="role" type="text" placeholder="Web Developer">
+                            </div>
+                        </div>
+                        <h4>
+                            <span>02.</span>
+                            Biz sizə nə ilə kömək edə bilərik?
+                        </h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Product">Product Design</label>
+                                <input id="Product" type="text" placeholder="Web designer">
+                            </div>
+                        </div>
+                        <h4>
+                            <span>03.</span>
+                            Layihəniz haqqında bizə məlumat verin
+                        </h4>
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <label for="Description">Project Description</label>
+                                <textarea placeholder="Your Message" name="" id="Description" cols="30"
+                                    rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Budget">Project Budget</label>
+                                <input id="Budget" type="number" placeholder="1000">
+                            </div>
+                        </div>
+                    </form>
+                    <input type="submit" name="" id="all-sumbit">
+                </div>
+                <div class="col-lg-4 col-xl-4">
+                    <h5>Dəstək sorğusu</h5>
+                    <p>Mütəxəssislərimiz suallarınızı cavablandırmağa hazırdır.</p>
+                    <a href="#">
+                        <span>İndi Dəstək</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <div class="support-line"></div>
+                    <div class="question-part">
+                        <img src="question-icon.svg" alt="icon">
+                    </div>
+                    <h5>Kömək lazımdır?</h5>
+                    <p>Texniki suallar və ya faktura ilə bağlı suallar üçün Müştəri Xidmətləri ilə əlaqə saxlayın.</p>
+                    <div class="question-part">
+                        <img src="icon.svg" alt="icon">
+                    </div>
+                    <h5>Daha çox məlumat lazımdır?</h5>
+                    <p>Texniki suallar və ya faktura ilə bağlı suallar üçün Müştəri Xidmətləri ilə əlaqə saxlayın.</p>
+                    <div class="support-line"></div>
+
+                    <a href="#" class="support-icon">
+                        <span>Qanunilik bələdçisi</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="support-icon">
+                        <span>Təhlükəsizlik Mərkəzi</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4283506588436!2d49.85134057520083!3d40.37719805804568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d077c61fef3%3A0xfa4594c97092ca01!2sAF%20Business%20House!5e0!3m2!1str!2saz!4v1683731559267!5m2!1str!2saz"
+            width="100%" height="450" style="border:0; margin-top: 90px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="contact-branch">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <h4>28 May</h4>
+                    <h5>Azerbaijan</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis qui quos vitae</p>
+                    <div class="support-line"></div>
+                    <h6 class="branch-number"><span>+994</span>515888968</h6>
+                    <h6 class="branch-email"><span>Milli</span>28may@gmail.com</h6>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Genclik</h4>
+                    <h5>Azerbaijan</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis qui quos vitae</p>
+                    <div class="support-line"></div>
+                    <h6 class="branch-number"><span>+994</span>515888968</h6>
+                    <h6 class="branch-email"><span>Milli</span>genclik@gmail.com</h6>
+                </div>
+                <div class="col-xl-4">
+                    <h4>Neftciler</h4>
+                    <h5>Azerbaijan</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis qui quos vitae</p>
+                    <div class="support-line"></div>
+                    <h6 class="branch-number"><span>+994</span>515888968</h6>
+                    <h6 class="branch-email"><span>Milli</span>Neftciler@gmail.com</h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact-page-end">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h3 class="reng"><span>MilliSoft</span> Təcrübəsinə qoşulun</h3>
+                    <p>Geleceyiniz özun qur...</p>
+                </div>
+                <div class="col-xl-6">
+                    <div class="end-email-input">
+                        <input type="text" name="" id="" placeholder="Email Addresiniz">
+                        <button>Abunə olun</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lines">
+            <div class="left-line"></div>
+            <div class="mid-line"></div>
+            <div class="right-line"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                    <img src="logo-light.png" alt="">
+                    <p>28 May Aff Bussiness 4 cu Mertebe</p>
+                    <ul>
+                        <li>+994<span>515888968</span></li>
+                        <li>Milli<span>Soft@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 col-lg-8 col-xl-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 col-sm-6">
+                                <h4>Sosial</h4>
+                                <ul>
+                                    <li style="margin-top: 60px;"><a href="#">Facebook </a></li>
+                                    <li><a href="#">Instagram </a></li>
+                                    <li><a href="#">LinkedLn </a></li>
+                                    <li><a href="#">Twitter </a></li>
+                                    <li><a href="#">Youtube </a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-sm-6">
+                                <h4>Dəstək</h4>
+                                <ul>
+                                    <li style="margin-top: 60px;"><a href="#">Sənədlər </a></li>
+                                    <li><a href="#">Tez-tez verilən suallar </a></li>
+                                    <li><a href="#">Dəstək </a></li>
+                                    <li><a href="#">Yüklə </a></li>
+                                    <li><a href="#">yol xəritəsi</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-sm-6">
+                                <h4>Bağlantılar</h4>
+                                <ul>
+                                    <li style="margin-top: 60px;"><a href="#">Bizim haqqımızda </a></li>
+                                    <li><a href="#">şərtlər </a></li>
+                                    <li><a href="#">Gizlilik Siyasəti </a></li>
+                                    <li><a href="#">Partners </a></li>
+                                    <li><a href="#">Mətbəə </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-footer">
+        <p>© MilliSoft 2023.</p>
+        <p>Bütün hüquqlar qorunur.</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
