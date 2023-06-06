@@ -9,6 +9,9 @@
 body {
     font-family: Sora, sans-serif;
 }
+body a{
+    text-decoration: none
+}
 #header .navbar{
     height: 100px;
     box-shadow: 0 0 40px 0 rgba(18,24,32,.1);
@@ -556,7 +559,6 @@ body {
     #contact-page .contact-head .contact-head-deco {
         display: none !important;
     }
-
     #contact-footer p {
         font-size: 13px;
         margin-right: 5px !important;
@@ -578,9 +580,17 @@ body {
         width: 95%!important;
         margin-left: 2%!important;
     }
+    #login-page .form-inner-cont{
+        width: 85%!important;
+        margin: 20px 40px!important;
+    }
+}
+@media(min-width: 768px) and (max-width:1256px) {
+    #login-page .form-inner-cont{
+        width: 45%!important;
+    }
 }
 /* <---------------------------------------------------------------> */
-
 #team-participants{
     padding: 80px 0px;
 }
@@ -865,4 +875,153 @@ color: #f57c00;
         width: 70%;
         height: 95%;
         border-radius: 100%;
+    }
+    #login-page{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.31)), url(img/login-back.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: grid;
+    }
+    #login-page .form-inner-cont {
+        width: 30%;
+        height: 500px;
+        margin: 40px 90px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    #login-page .form-inner-cont img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin-left: 30%;
+    }
+    #login-page .form-inner-cont h3 {
+        font-size: 25px;
+        line-height: 30px;
+        color: #051b35;
+        margin: 20px 0px;
+    }
+    #login-page .form-input {
+        width: 90%;
+        height: 40px;
+        border: 1px solid rgba(31, 94, 180, 0.22);
+        display: flex;
+        border-radius: 4px;
+        margin: 10px 0px;
+    }
+    #login-page .form-input input:active .form-input{
+        background-color: rgba(70, 90, 126, 0.4);
+    }
+    #login-page .form-input input {
+        width: 750%;
+        height: 100%;
+        border: none;
+        padding-left: 5px;
+    }
+    #login-page .form-input i{
+        width: 25%;
+        margin: 12px 15px;
+        color: #f57c00;
+    }
+    #login-page .form-input input:focus{
+        outline: none;
+    }
+    #login-page .form-inner-cont .login-remember{
+        width: 90%;
+    }
+    #login-page .form-inner-cont .login-remember label{
+        display: flex;
+    }
+    #login-page .form-inner-cont .login-remember label p{
+       margin: 14px;
+       font-size: 14px;
+       line-height: 18px;
+       color: #333333;;
+    }
+    #login-page .form-inner-cont .login-remember  button{
+    min-width: 110px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f57c00;
+    padding: 14px 18px;
+    border-radius: 4px;
+    border: 1px solid #f57c00;
+    font-family: Sora, sans-serif;
+    transition: 0.6s;
+    }
+    #login-page .form-inner-cont .login-remember  button:hover{
+        background-color: #fff;
+        color: #f57c00;
+    }
+    #login-page .form-inner-cont .login-remember{
+        display: flex;
+        justify-content: space-between;
+    }
+    #login-page .form-inner-cont .social-icons .continue{
+        width: 90%;
+        height: 1px;
+        background: #f7f7f7;
+        text-align: center;
+        margin-top: 40px;
+    }
+    #login-page .form-inner-cont .social-icons {
+        height: 20px;
+        position: relative;
+    }
+    #login-page .form-inner-cont .social-icons .continue span{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        position: absolute;
+        top: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        left: 41%;
+        border-radius: 100%;
+        font-size: 13px;
+        background: #f7f7f7;
+    }
+    #login-page .form-inner-cont .social-icons .social-login{
+        display: flex;
+        margin-top: 30px!important;
+       text-align: center;
+       justify-content: center;
+    }
+    #login-page .form-inner-cont .social-icons .social-login a i{
+        font-size: 18px;
+        margin-top: 4px;
+    }
+    #login-page .form-inner-cont .social-icons .social-login a{
+        padding: 7px 10px;
+        border-radius: 100%;
+        margin-right: 30px;
+        background-color: #f57c00;
+        color: white;
+        transition: 0.8s;
+    }
+    #login-page .form-inner-cont .social-icons .social-login a:hover{
+        color: #f57c00;
+        background-color: white;
+    }
+    #login-page .form-inner-cont .signup{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 170%;
+    margin: 60px 0px!important;
+    }
+    #login-page .form-inner-cont .signup a{
+        color: #f57c00;
+        font-weight: 600;
     }
