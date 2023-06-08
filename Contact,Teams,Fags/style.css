@@ -584,6 +584,12 @@ body a{
         width: 85%!important;
         margin: 20px 40px!important;
     }
+    #admin-panel .admin-panel-nav .sidebar-button{
+        display: none!important;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box{
+        width: 100%!important;
+    }
 }
 @media(min-width: 768px) and (max-width:1256px) {
     #login-page .form-inner-cont{
@@ -893,6 +899,7 @@ color: #f57c00;
         background: #fff;
         border-radius: 10px;
         padding: 20px;
+        box-shadow: 0px 0px 15px rgb(29, 28, 28);
     }
     #login-page .form-inner-cont img{
         width: 100px;
@@ -1024,4 +1031,296 @@ color: #f57c00;
     #login-page .form-inner-cont .signup a{
         color: #f57c00;
         font-weight: 600;
+    }
+    #admin-panel .sidebar {
+        position: fixed;
+        height: 100%;
+        width: 240px;
+        /* background: #0A2558;
+         */
+         background-color: #f57c00;
+        transition: all 0.5s ease;
+    }
+
+   #admin-panel .sidebar.active {
+        width: 60px;
+    }
+
+   #admin-panel .sidebar .logo-details {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+   #admin-panel .sidebar .logo-details i {
+        font-size: 28px;
+        font-weight: 500;
+        color: #fff;
+        min-width: 60px;
+        text-align: center
+    }
+
+   #admin-panel .sidebar .logo-details .logo_name {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+   #admin-panel .sidebar .nav-links {
+        margin-top: 10px;
+    }
+
+   #admin-panel .sidebar .nav-links li {
+        position: relative;
+        list-style: none;
+        height: 50px;
+    }
+
+   #admin-panel .sidebar .nav-links li a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.4s ease;
+    }
+
+   #admin-panel .sidebar .nav-links li a.active {
+        background: #743d06;
+    }
+
+   #admin-panel .sidebar .nav-links li a:hover {
+    background: #743d06;
+
+    }
+   #admin-panel .sidebar .nav-links li i {
+        min-width: 60px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+
+   #admin-panel .sidebar .nav-links li a .links_name {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        white-space: nowrap;
+    }
+
+   #admin-panel .sidebar .nav-links .log_out {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+   #admin-panel .admin-panel-nav {
+        position: relative;
+        background: #f5f5f5;
+        min-height: 100vh;
+        width: calc(100% - 240px);
+        left: 240px;
+        transition: all 0.5s ease;
+    }
+
+   #admin-panel .sidebar.active~.admin-panel-nav {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+   #admin-panel .admin-panel-nav nav {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: calc(100% - 240px);
+        left: 240px;
+        z-index: 100;
+        padding: 0 20px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s ease;
+    }
+
+   #admin-panel .sidebar.active~.admin-panel-nav nav {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+   #admin-panel .admin-panel-nav nav .sidebar-button {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+   #admin-panel nav .sidebar-button i {
+        font-size: 35px;
+        margin-right: 10px;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box{
+        width: 9%;
+        height: 60%;
+        background-color: #ef8112;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 40px;
+        padding: 0px 20px;
+        transition: 1s;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box:hover{
+        width: 30%;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box input{
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box i{
+        color: white;
+
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box input::placeholder{
+        color: white;
+    }
+    #admin-panel .admin-panel-nav .admin-panel-search-box input:focus{
+        outline: none;
+    }
+
+
+    #register-student-page .container .col-lg-8 form .twice-two,#newpacket-page .container .col-lg-8 form .twice-two{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    } 
+#register-student-page .container .col-lg-8 form .twice-two input,#newpacket-page .container .col-lg-8 form .twice-two input,#newvideo-page .container .col-lg-8 form .twice-two input,#register-student-page .container .col-lg-8 form select,#newvideo-page .container .col-lg-8 form select,#register-student-page .container .col-lg-8 form select,#newpacket-page .container .col-lg-8 form select{
+    background: #f4f4f4;
+    border: 1px solid transparent;
+    color: #525252;
+    font-size: 18px;
+    padding: 12px 20px;
+    line-height: 28px;
+    width: 49%;
+    border-radius: 6px;
+    height: 58px;
+    margin-top: 25px;
+}
+#register-student-page .container .col-lg-8 form .btn-primary ,#video-allow-page .container .groups-header .add-new-group,#newvideo-page .container .col-lg-8 form .btn-primary,#newpacket-page .container .col-lg-8 form .btn-primary {
+    color: #fff;
+    background-color: #f35b04;
+    border-color: #f35b04;
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    transition: 1s;
+    margin: 20px 5px;
+    border: none;
+}
+#register-student-page .container .col-lg-8 form input:focus,#newpacket-page .container .col-lg-8 form input:focus,#newvideo-page .container .col-lg-8 form input:focus {
+    box-shadow: 0px 0px 5px #ee6c21;
+    outline: none;
+}
+#register-student-page .container .col-lg-8 h3,#newpacket-page .container .col-lg-8 h3,#newvideo-page .container .col-lg-8 h3{
+    color: #051b35;
+    margin-top: 20px;
+}
+#register-student-page .container .col-lg-8 form select:focus,#newpacket-page .container .col-lg-8 form select:focus,#newvideo-page .container .col-lg-8 form select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #ee6c21;
+}
+#register-student-page .container .col-lg-8 form .btn-primary:hover,#video-allow-page .container .groups-header .add-new-group:hover,#newpacket-page .container .col-lg-8 form .btn-primary:hover,#newvideo-page .container .col-lg-8 form .btn-primary:hover {
+    background-color: #3d348b;
+    border: none;
+}
+#video-allow-page .container .groups-header h4{
+    margin-top: 40px;
+}
+#video-allow-page .container .row .col-xl-3{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgb(65, 64, 64);
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.4s;
+}
+#video-allow-page .container .row .col-xl-3:hover{
+    box-shadow: 0px 0px 10px rgb(65, 64, 64);
+}
+#video-allow-page .container .row .col-xl-3 .group-header ul{
+    background-color: rgb(237, 227, 227);
+    border-radius: 40px;
+    padding-right: 10px;
+    margin-top: 12px;
+}
+#video-allow-page .container .row .col-xl-3 .group-header ul li{
+    height: 30px!important;
+    margin-top: 6px;
+    color: #ef8112;
+}
+#video-allow-page .container .row .col-xl-3 .group-content img{
+width: 40px;
+height: 40px;
+border-radius: 100%;
+object-fit: cover;
+}
+#video-allow-page .container .row .col-xl-3 .group-content .teacher-inf p,#video-allow-page .container .row .col-xl-3  .course-inf p{
+    font-size: 12px;
+    color: gray;
+}
+#videoallowstudentsModal  {
+    width: 100%!important;
+    height: 100%!important;
+    margin: 0!important;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    z-index: 231;
+    background-color: white;
+    transition: 1s
+    }
+    #videoallowstudentsModal span {
+        font-size: 35px;
+        position: absolute;
+        top: 0%;
+        right: 2%;
+        cursor: pointer;
+    }
+    #videoallowstudentsModal.active{
+        top: 0%;
+        left: 0%;
+    }
+    #videoallowstudentsModal h3{
+        text-align: center;
+        margin-top: 20px;
+        color: #0c3e7a;
+    }
+    #videoallowstudentsModal table{
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+    }
+    #videoallowstudentsModal table tr{
+        color: #051b35;
+    }
+    #videoallowstudentsModal table tr td a{
+        width: 40%!important;
+        height: 90%!important;
+        background-color: #062955!important;
+        margin-left: 5px;
+        text-align: center;
+        color: white;
+        border-radius: 2px;
+    }
+    #videoallowedstudentsModal .modal-footer button{
+        background-color: #ee6c21!important;
+        border-radius: 5px!important;
+        border: 1px solid #ee6c21;
+    }
+    #videoallowedstudentsModal .modal-footer button:hover{
+        background-color: #051b35!important;
+        border: 1px solid #051b35!important;
+
     }
