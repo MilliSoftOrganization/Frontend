@@ -14,5 +14,4 @@ document.querySelectorAll('#team-participants .container .row .col-xl-4 img').fo
 });
 modalRemove.addEventListener('click', function () {
     modalTeam.classList.remove('active');
-
 })
